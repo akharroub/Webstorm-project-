@@ -1,0 +1,12 @@
+.test{
+    border: 5px red solid;
+    text-align: center;
+}
+
+.taille{
+    width: 300px;
+    height: 300px;
+}
+.textColor{
+    color: #FF00FF;
+}

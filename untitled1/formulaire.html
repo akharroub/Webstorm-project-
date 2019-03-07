@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>le formulaire</title>
+    <link rel="stylesheet" href="css/formulaire.css">
+</head>
+<body>
+<div>
+<form action="inscription" method="POST" >
+    <fieldset >
+        <legend>inscription</legend>
+    <br/>
+    <label for="nom">Votre nom </label><br>
+    <input type="text" name="nom" id="nom"/>
+    <br/>
+
+    <label for="prenom">Votre prénom</label><br/>
+    <input type="text" name="prenom" id="prenom"/>
+    <br/>
+
+    <label for="color">color:</label>
+    <input type="color" name="couleur" id="color"/>
+    <br/>
+
+    <label for="email">email:</label>
+    <input type="email" name="email" id="email" placeholder="saisir une adresse email"/>
+    <br/>
+
+    <label for="chechbox">checkbox:</label>
+    <input type="checkbox" name="j'accepte" id="chechbox"/>
+    <br/>
+
+    <label for="tele">tel:</label>
+    <input type="tel" name="telephone" id="tele" placeholder="saissir un numero de telephone"/>
+    <br/>
+
+    <label for="range">reng</label><br/>
+    <input type="range" name="rang" id="range">
+    <br/>
+
+    <label for="date">date:</label>
+    <input type="date" name="date_de_naissance" id="date"/>
+    <br/>
+
+    <label for="time">time:</label>
+    <input type="time" name="heure" id="time"/>
+    <br/>
+
+    <label for="numero">number:</label>
+    <input type="number" name="note" id="numero"/>
+    <br/>
+
+    <label for="mot">password</label>
+    <input type="password" name= "mot_de_pass" id="mot"/>
+    <br/>
+
+
+    <br/>
+    <input type="submit" value="envoyer le formulaire"/>
+    <br/>
+    <input type="button" name="btn" value="Coucou"/>
+    <button>Valier</button>
+
+    <br/>
+    <label>Radio:</label><br/>
+
+    Mme: <input type="radio" name="civilite" checked /><br/>
+    Mr  : <input type="radio" name="civilite" ><br/>
+
+    <label>ville :</label>
+    <select name="ville">
+        <option value="lille">lille</option>
+        <option value="agadir">agadir</option>
+        <option value="bali" selected>bali</option>
+    </select>
+    </fieldset>
+
+</form>
+</div>
+
+</body>
+</html>

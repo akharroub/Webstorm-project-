@@ -1,0 +1,18 @@
+#btns{
+    margin: auto;
+    width: 80px;
+}
+
+.image{
+    width: 400px;
+    height: 250px;
+}
+
+#conteneur{
+    width: 400px;
+    margin: auto;
+}
+
+.image{
+    display: none;
+}

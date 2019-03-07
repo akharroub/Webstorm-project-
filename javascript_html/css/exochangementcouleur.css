@@ -1,0 +1,19 @@
+#paraph{
+    width: 1000px;
+    height: 500px;
+}
+.bleu{
+    background-color: blue;
+
+}
+.vert{
+    background-color:green;
+}
+.rouge{
+    background-color: red;
+
+}
+.orange{
+    background-color: orange;
+   
+ }

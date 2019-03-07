@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Horloge</title>
+</head>
+<body>
+
+<article class="horloge">
+
+    <div class="heure-conteneur">
+        <div class="heure"></div>
+    </div>
+
+    <div class="minutes-conteneur">
+        <div class="minutes"></div>
+    </div>
+
+    <div class="secondes-conteneur">
+        <div class="secondes">
+        </div>
+    </div>
+
+    <style>
+        .horloge{
+            border-radius: 50%;
+            background: #fff url(http://ekladata.com/mG4mVZKmAKkJdcawNHApmk4BpaU/horl029.png) no-repeat center;
+            background-size: 80%;
+            height:  20em;
+            padding: bottom: 31%;
+            position:relative;
+            width: 20em;
+        }
+        .horloge.simple:after {
+            background: #000;
+            border-radius: 50%;
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            width: 5%;
+            height: 5%;
+            z-index: 10;
+        }
+        .minutes-conteneur, .heure-conteneur, .secondes-conteneur {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+        .heure {
+            background: #000;
+            height: 20%;
+            left: 48.75%;
+            position: absolute;
+            top: 30%;
+            transform-origin: 50% 100%;
+            width: 2.5%;
+        }
+        .minutes {
+            background: grey;
+            height: 40%;
+            left: 49%;
+            position: absolute;
+            top: 10%;
+            transform-origin: 50% 100%;
+            width: 2%;
+        }
+        .secondes {
+            background: red;
+            height: 45%;
+            left: 49.5%;
+            position: absolute;
+            top: 14%;
+            transform-origin: 50% 80%;
+            width: 1%;
+            z-index: 8;
+        }
+        @keyframes rotate {
+            100% {
+                transform: rotateZ(360deg);
+            }
+        }
+        .heure-conteneur {
+            animation: rotate 43200s infinite linear;
+        }
+        .minutes-conteneur {
+            animation: rotate 3600s infinite linear;
+        }
+        .secondes-conteneur {
+            animation: rotate 60s infinite linear;
+        }
+    </style>
+
+</body>
+</html>

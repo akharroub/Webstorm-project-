@@ -1,0 +1,32 @@
+p{
+    background-color: red;
+}
+h1{
+    background-color: green;
+}
+h6{
+    background-color: blue;
+}
+img{
+    background-color: yellow;
+}
+div{
+    background-color: chartreuse;
+}
+span{
+    font-weight: bold;
+    background-color: aqua;
+    font-size: 30px;
+}
+#inlineMot{
+    color: red;
+    font-size: 100px;
+    font-style: italic;
+    background-color: antiquewhite;
+}
+#blockMot{
+    color: red;
+    font-size: 100px;
+    font-style: italic;
+    background-color: antiquewhite;
+}

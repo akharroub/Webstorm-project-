@@ -1,0 +1,13 @@
+.image{
+    width: 600px;
+    height: 450px;
+}
+
+#conteneur{
+    width: 600px;
+    margin: auto;
+}
+
+.image{
+    display: none;
+}

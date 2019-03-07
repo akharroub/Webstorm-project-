@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/events.css"/>
+</head>
+<body>
+<div>
+    <h1 id="eventsTitle"
+        onclick="
+    alert('Vous avez cliué sur le h1');
+    console.log('onClick sur le H1');
+"
+    >Les events</h1>
+    <img id="eventsImage"
+         src="https://www.milton.ca/en/live/resources/Events.jpg"
+         title="Image des attributs"
+         onclick="gestionClick();"
+         ondblclick="agrandir()"
+    />
+    <p id="eventsParaph" onclick="changerTextColor();">La propriété Element.attributes renvoie une collection des noeuds d'attribut enregistrés dans le noeud spécifié.<br>
+        Il est une NamedNodeMap, pas un tableau (Array), aussi il n'a pas de méthodes  Array et l'index de noeud Attr peuvent différer entre les navigateurs.<br>
+        Pour être plus précis, les attributs sont une paire clé / valeur de chaînes représentant toutes les informations concernant cet attribut.</p>
+
+    <img
+            id="imageEvents"
+            src="https://d.wildapricot.net/images/newsblog/bigstock-events-7444309.jpg"
+            title="Events image"
+            alt="une image sur les events"
+            onmouseover="agrandirImage();"
+            onmouseout="retricir();"
+    />
+</div>
+
+
+<script type="application/javascript"
+        src="../js/events.js"
+></script>
+</body>
+</html>
